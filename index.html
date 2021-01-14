@@ -11,15 +11,41 @@
   <div class="container">
     <h1>Animal Wiki</h1>
     <p>Click on the animal you would like to learn more about.</p>
-    <h2 class="clickable">Turtle</h2>
-    <div id="turtle">
-      <p>Turtles are reptiles of the order Chelonia /kɪˈloʊniə/ or Testudines /tɛˈstjuːdɪniːz/. They are characterized by a special bony or cartilaginous shell developed from their ribs that acts as a shield. Colloquially, the word "turtle" is generally restricted to fresh-water and sea-dwelling Testudines.</p>
-      <img src="img/turtle.jpeg" alt="A photo of a turtle eating lettuce">
+    <form id="animals">
+      <div class="radio" id="turtles">
+        <h2 class="animalClick" >Turtle</h2>
+        <label>
+        <input type="radio" name="animalType" value="turtle" checked>
+        <div id="hidden">
+          <p>Turtles are reptiles of the order Chelonia /kɪˈloʊniə/ or Testudines /tɛˈstjuːdɪniːz/. They are characterized by a special bony or cartilaginous shell developed from their ribs that acts as a shield. Colloquially, the word "turtle" is generally restricted to fresh-water and sea-dwelling Testudines.</p>
+          <img src="img/turtle.jpeg" alt="A photo of a turtle eating lettuce">
+        </div>
+    </label>
     </div>
-   <h2 class="clickable">Snake</h2>
-   <div id="snake">
-     <p>Turtles are reptiles of the order Chelonia /kɪˈloʊniə/ or Testudines /tɛˈstjuːdɪniːz/. They are characterized by a special bony or cartilaginous shell developed from their ribs that acts as a shield. Colloquially, the word "turtle" is generally restricted to fresh-water and sea-dwelling Testudines.</p>
-   </div> 
+    <div class="radio" id="snakes">
+      <label>
+        <input type="radio" name="animalType" value="snake">
+          <h2 class="animalClick" >Snake</h2>
+            <div id="hidden">
+            <p>Turtles are reptiles of the order Chelonia /kɪˈloʊniə/ or Testudines /tɛˈstjuːdɪniːz/. They are characterized by a special bony or cartilaginous shell developed from their ribs that acts as a shield. Colloquially, the word "turtle" is generally restricted to fresh-water and sea-dwelling Testudines.</p>
+            img src="img/baby-snake.jpeg" alt="A photo of a baby green snake hanging in a tree with its' mouth open wide.">
+            </div>
+      </label>
+    </div>
+    <div class="radio" id="pangolins">
+      <label>
+        <input type="radio" name="animalType" value="pandolin">
+        <h2 class="animalClick">Pangolin</h2> 
+        <div id="hidden">
+          <p>Pangolins, sometimes known as scaly anteaters,[6] are mammals of the order Pholidota (/fɒlɪˈdoʊtə/, from Ancient Greek ϕολιδωτός 'clad in scales').[7] The one extant family, Manidae, has three genera: Manis, Phataginus and Smutsia. Manis comprises the four species found in Asia, while Phataginus and Smutsia include two species each, all found in sub-Saharan Africa.</p>
+          <img src="img/pangolin.jpeg" alt="A photo of a pangolin on a tree.">
+        </div>
+    </label>
+  </form>
   </div>
 </body>
 </html>
+
+
+
+<!-- Not: add form to buttons, seperate Business and user logic in javascript and seperate info into own section.-->
